@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI Test</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css" />
+</head>
+
+<style>
+  .form-check-label {
+    font-weight: 600;
+  }
+
+  .hide {
+    display: none;
+  }
+</style>
+
+<body style="background-color: rgb(255, 255, 255);">
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="form-check">
+          <input class="form-check-input select-year" for-year="year-card-1" type="checkbox" />
+          <label class="form-check-label" for="">
+            2021
+          </label>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="form-check">
+          <input class="form-check-input select-year" for-year="year-card-2" type="checkbox" />
+          <label class="form-check-label" for="">
+            2022
+          </label>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="form-check">
+          <input class="form-check-input select-year" for-year="year-card-3" type="checkbox" />
+          <label class="form-check-label" for="">
+            2023
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-sm-4">
+        <div class="card text-center hide year-card-1">
+          <div class="card-header text-end">
+            <button class="btn btn-primary reset-btn">Reset</button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">2021</h5>
+            <select class="form-select select-month" aria-label="Default select example">
+              <option selected value="0">Select any option</option>
+              <option value="1">Jan - Apr</option>
+              <option value="2">May - Aug</option>
+              <option value="3">Sep - Dec</option>
+            </select>
+            <div class="row text-start mt-4 hide group1">
+              <div class="mb-3">
+                <label for="month1" class="form-label">January</label>
+                <input type="number" class="form-control" month="1" placeholder="January" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">February</label>
+                <input type="number" class="form-control" month="2" placeholder="February" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">March</label>
+                <input type="number" class="form-control" month="3" placeholder="March" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">April</label>
+                <input type="number" class="form-control" month="4" placeholder="April" value="0">
+              </div>
+            </div>
+            <div class="row text-start mt-4 hide group2">
+              <div class="mb-3">
+                <label for="month1" class="form-label">May</label>
+                <input type="number" class="form-control" month="1" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">June</label>
+                <input type="number" class="form-control" month="2" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">July</label>
+                <input type="number" class="form-control" month="3" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">Augest</label>
+                <input type="number" class="form-control" month="4" placeholder="jan" value="0">
+              </div>
+            </div>
+            <div class="row text-start mt-4 hide group3">
+              <div class="mb-3">
+                <label for="month1" class="form-label">September</label>
+                <input type="number" class="form-control" month="1" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">October</label>
+                <input type="number" class="form-control" month="2" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">November</label>
+                <input type="number" class="form-control" month="3" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">December</label>
+                <input type="number" class="form-control" month="4" placeholder="jan" value="0">
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-end">
+            <button class="btn btn-primary calculate-btn">Calculate</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card text-center hide year-card-2">
+          <div class="card-header text-end">
+            <button class="btn btn-primary reset-btn">Reset</button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">2022</h5>
+            <select class="form-select select-month" aria-label="Default select example">
+              <option selected>Select any option</option>
+              <option value="1">Jan - Apr</option>
+              <option value="2">May - Aug</option>
+              <option value="3">Sep - Dec</option>
+            </select>
+            <div class="row text-start mt-4 hide group1">
+              <div class="mb-3">
+                <label for="month1" class="form-label">January</label>
+                <input type="number" class="form-control" month="1" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">February</label>
+                <input type="number" class="form-control" month="2" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">March</label>
+                <input type="number" class="form-control" month="3" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">April</label>
+                <input type="number" class="form-control" month="4" placeholder="jan" value="0">
+              </div>
+            </div>
+            <div class="row text-start mt-4 hide group2">
+              <div class="mb-3">
+                <label for="month1" class="form-label">May</label>
+                <input type="number" class="form-control" month="1" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">June</label>
+                <input type="number" class="form-control" month="2" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">July</label>
+                <input type="number" class="form-control" month="3" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">Augest</label>
+                <input type="number" class="form-control" month="4" placeholder="jan" value="0">
+              </div>
+            </div>
+            <div class="row text-start mt-4 hide group3">
+              <div class="mb-3">
+                <label for="month1" class="form-label">September</label>
+                <input type="number" class="form-control" month="1" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">October</label>
+                <input type="number" class="form-control" month="2" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">November</label>
+                <input type="number" class="form-control" month="3" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">December</label>
+                <input type="number" class="form-control" month="4" placeholder="jan" value="0">
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-end">
+            <button class="btn btn-primary calculate-btn">Calculate</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card text-center hide year-card-3">
+          <div class="card-header text-end">
+            <button class="btn btn-primary reset-btn">Reset</button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">2023</h5>
+            <select class="form-select select-month" aria-label="Default select example">
+              <option selected>Select any option</option>
+              <option value="1">Jan - Apr</option>
+              <option value="2">May - Aug</option>
+              <option value="3">Sep - Dec</option>
+            </select>
+            <div class="row text-start mt-4 hide group1">
+              <div class="mb-3">
+                <label for="month1" class="form-label">January</label>
+                <input type="number" class="form-control" month="1" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">February</label>
+                <input type="number" class="form-control" month="2" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">March</label>
+                <input type="number" class="form-control" month="3" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">April</label>
+                <input type="number" class="form-control" month="4" placeholder="jan" value="0">
+              </div>
+            </div>
+            <div class="row text-start mt-4 hide group2">
+              <div class="mb-3">
+                <label for="month1" class="form-label">May</label>
+                <input type="number" class="form-control" month="1" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">June</label>
+                <input type="number" class="form-control" month="2" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">July</label>
+                <input type="number" class="form-control" month="3" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">Augest</label>
+                <input type="number" class="form-control" month="4" placeholder="jan" value="0">
+              </div>
+            </div>
+            <div class="row text-start mt-4 hide group3">
+              <div class="mb-3">
+                <label for="month1" class="form-label">September</label>
+                <input type="number" class="form-control" month="1" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">October</label>
+                <input type="number" class="form-control" month="2" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">November</label>
+                <input type="number" class="form-control" month="3" placeholder="jan" value="0">
+              </div>
+              <div class="mb-3">
+                <label for="month1" class="form-label">December</label>
+                <input type="number" class="form-control" month="4" placeholder="jan" value="0">
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-end">
+            <button class="btn btn-primary calculate-btn">Calculate</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/bootstrap.min.js"></script>
+  <script>
+    $(".select-year").on("click", function () {
+      if ($(this).is(":checked")) {
+        $("." + $(this).attr("for-year")).show();
+      } else {
+        $("." + $(this).attr("for-year")).hide();
+      }
+    });
+
+    $(".select-month").on("change", function () {
+      let value = $(this).val();
+      for (let i = 1; i <= 3; i++) $(this).siblings(".group" + i).hide();
+      if (value != "0") $(this).siblings(".group" + value).show();
+    });
+
+    $("input").on("change", function () {
+      let month = $(this).attr("month");
+      if ($(this).val() != "0") {
+        $(this).parent().parent().find("input").each(function (i) {
+          if (month != $(this).attr("month")) {
+            $(this).attr("disabled", true);
+          } else {
+            $(this).attr("disabled", false);
+          }
+        })
+      } else {
+        $(this).parent().parent().find("input").attr("disabled", false)
+      }
+    });
+
+    $(".reset-btn").on("click", function () {
+      $(this).parent().parent().find(".select-month").each(function () {
+        $(this).siblings(".group" + $(this).val()).find("input").each(function(){
+          $(this).attr("disabled", false);
+          $(this).val(0);
+        })
+      });
+    });
+
+    $(".calculate-btn").on("click", function () {
+      let value = null;
+      $(this).parent().parent().find(".select-month").each(function () {
+        $(this).siblings(".group" + $(this).val()).find("input").each(function(){
+          if($(this).val() != "0") value = $(this).val();
+          else{
+            $(this).val(Math.floor(Math.random() * 100));
+          }
+        })
+      });
+    });
+  </script>
+</body>
+
+</html>
